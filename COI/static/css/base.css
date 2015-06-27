@@ -22,12 +22,12 @@
 
 @font-face {
   font-family: 'Futura-Regular';
-  src: url('../fonts/FuturaCnd-Regular.otf') format('opentype'),
-       url('../fonts/FuturaCnd-Regular.woff') format('woff'),
-       url('../fonts/FuturaCnd-Regular.woff2') format('woff2'),
-       url('../fonts/FuturaCnd-Regular.eot'),
-       url('../fonts/FuturaCnd-Regular.ttf') format('truetype'),
-       url('../fonts/FuturaCnd-Regular.svg#svgFontName') format('svg')
+  src: url('../fonts/Futura-Regular.otf') format('opentype'),
+       url('../fonts/Futura-Regular.woff') format('woff'),
+       url('../fonts/Futura-Regular.woff2') format('woff2'),
+       url('../fonts/Futura-Regular.eot'),
+       url('../fonts/Futura-Regular.ttf') format('truetype'),
+       url('../fonts/Futura-Regular.svg#svgFontName') format('svg')
 }
 
 * {
