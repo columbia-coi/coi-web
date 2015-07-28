@@ -27,6 +27,7 @@
 
 	<div class="featured_list">
 		{% for featured in featured_list %}
+			{% if featured.order > 0 %}
 
 			<div class="featured_preview_img">
 				<a href="featured/{{featured.name|slugify}}">
@@ -48,7 +49,49 @@
 				{% if featured.category != 'Interview' %}
 					<h2 style="font-family:'Lusitana-Bold'">{{featured.category}}:</h2>
 					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'">{{featured.name}}</h1><br>
-				
+
+				{% else %}
+					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'; font-size: 1.5vw;">{{featured.name}}</h1><br>
+
+				{% endif %}
+
+					{{featured.summary}}
+					<br><br>
+					<a href="featured/{{featured.name|slugify}}">Click to learn more</a>
+				</div>
+			</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+
+	<h2 style="color: #8a9140; font-family:'Lusitana-Bold'">Previously Featured People</h2><br>
+
+
+	<div class="featured_list">
+		{% for featured in featured_list %}
+			{% if featured.order == 0 %}
+
+			<div class="featured_preview_img">
+				<a href="featured/{{featured.name|slugify}}">
+					<img src="media/{{featured.thumb}}" />
+
+					<div class="box_hidden">
+						{% if featured.category != 'Interview' %}
+							<i>{{featured.category}}:</i><br>
+						{% endif %}
+						{{featured.name}}
+					</div>
+				</a>
+			</div>
+
+
+			<div class="featured_preview_description">
+				<div class="featured_summary">
+
+				{% if featured.category != 'Interview' %}
+					<h2 style="font-family:'Lusitana-Bold'">{{featured.category}}:</h2>
+					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'">{{featured.name}}</h1><br>
+
 				{% else %}
 					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'; font-size: 1.5vw;">{{featured.name}}</h1><br>
 
@@ -60,8 +103,10 @@
 				</div>
 			</div>
 
+			{% endif %}
 		{% endfor %}
 	</div>
+
 
 
 
