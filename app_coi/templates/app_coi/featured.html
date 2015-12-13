@@ -30,7 +30,11 @@
 			{% if featured.order > 0 %}
 
 			<div class="featured_preview_img">
+				{% if featured.category == 'Featured Article' %}
+                                <a href="{{featured.website}}" target="_blank">
+                            {% else %}
 				<a href="featured/{{featured.name|slugify}}">
+                            {% endif %}
 					<img src="media/{{featured.thumb}}" />
 
 					<div class="box_hidden">
@@ -58,7 +62,7 @@
 					{{featured.summary}}
 					<br><br>
                                         {% if featured.category == 'Featured Article' %}
-                                        <a href="http://www.nytimes.com/2015/12/09/opinion/diversity-makes-you-brighter.html" target="_blank">Click to read full article</a>
+                                        <a href="{{featured.website}}" target="_blank">Click to read full article</a>
                                         {% else %}
 					<a href="featured/{{featured.name|slugify}}">Click to learn more</a>
                                         {% endif %}
@@ -76,7 +80,11 @@
 			{% if featured.order == 0 %}
 
 			<div class="featured_preview_img">
+                            {% if featured.category == 'Featured Article' %}
+                                <a href="{{featured.website}}" target="_blank">
+                            {% else %}
 				<a href="featured/{{featured.name|slugify}}">
+                            {% endif %}
 					<img src="media/{{featured.thumb}}" />
 
 					<div class="box_hidden">
@@ -104,7 +112,7 @@
 					{{featured.summary}}
 					<br><br>
                                         {% if featured.category == 'Featured Article' %}
-                                        <a href="http://www.nytimes.com/2015/12/09/opinion/diversity-makes-you-brighter.html" target="_blank">Click to read full article</a>
+                                        <a href="{{featured.website}}" target="_blank">Click to read full article</a>
                                         {% else %}
 					<a href="featured/{{featured.name|slugify}}">Click to learn more</a>
                                         {% endif %}
