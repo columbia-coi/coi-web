@@ -82,6 +82,7 @@ class Featured(models.Model):
 	news		= models.TextField(blank=True, null=True)
 	interview	= models.URLField(blank=True, null=True)
 	
+
 	order 		= models.IntegerField(default=0, blank=True, null=True)
 
 	# Sulgify page name

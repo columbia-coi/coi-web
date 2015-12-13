@@ -45,8 +45,11 @@
 						<ul class="slider_hidden">
 						{{featured.summary}}
 						<br><br>
-						Click to learn more
-
+                                                {% if featured.category == 'Featured Article' %}
+                                                <a href="http://www.nytimes.com/2015/12/09/opinion/diversity-makes-you-brighter.html" target="_blank">Click to read full article</a>
+                                                {% else %}
+					        <a href="featured/{{featured.name|slugify}}">Click to learn more</a>
+                                                {% endif %}
 						</ul>
 					</div>
 					</a>
