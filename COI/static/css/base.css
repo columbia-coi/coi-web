@@ -36,7 +36,7 @@
 
   /*font-family: Helvetica, Verdana;*/
   -webkit-font-smoothing: antialiased;
-  
+
   /*box-shadow: inset 0px 0px 0px 1px #f00;-webkit-box-shadow: inset 0px 0px 0px 1px #f00;-moz-box-shadow: inset 0px 0px 0px 1px #f00;*/
 
 }
@@ -125,7 +125,7 @@ html, body {
 
 #navbar > #navbar_top #navbar_search {
   position: absolute;
-  top: 53%; right: 2%; 
+  top: 53%; right: 2%;
   margin: auto;
   /*height: 100%;*/
 }
@@ -157,7 +157,7 @@ html, body {
 
 #navbar #navbar_search_hidden {
   position: absolute;
-  top: 52%; right: 5%; 
+  top: 52%; right: 5%;
   margin: auto;
   height: 100%;
   width: 10%;
@@ -180,17 +180,17 @@ html, body {
   transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
   -webkit-transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
   -moz-transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
-  -o-transition: visibility 1s ease-in-out, opacity 1s ease-in-out;    
+  -o-transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-#navbar #navbar_search_hidden > div > #search_form > form { 
+#navbar #navbar_search_hidden > div > #search_form > form {
   height: 100%
 }
 
 #navbar #navbar_search_hidden > div > #search_form #search_input {
   border: none;
   box-shadow: none;
-  
+
   width: 80%;
   height: 75%;
   font-size: 1vw;
@@ -209,9 +209,9 @@ html, body {
 }
 
 #navbar #navbar_search_hidden > div > #search_form #search_submit {
-  background: url("../img/search_icon_black.png") no-repeat top left;  
+  background: url("../img/search_icon_black.png") no-repeat top left;
   background-size: cover;
-  
+
   border: none;
   outline: none;
   box-shadow: none;
@@ -233,7 +233,7 @@ html, body {
 
 #navbar #search_close {
   position: absolute;
-  top: 55%; right: 2.5%; 
+  top: 55%; right: 2.5%;
   margin: auto;
   height: 50%;
 
@@ -310,9 +310,10 @@ html, body {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;  
+  -o-transition: all 0.3s ease-in-out;
 }
 #navbar > #navbar_bottom .navbar_submenu a {
+  padding-top: 0.5vw;
   color: white;
   display: block;
 }
@@ -372,7 +373,7 @@ html, body {
 
   width: 100%;
   height: 450%;
-  color: black;  
+  color: black;
 }
 
 #navbar > #navbar_bottom .navbar_submenu ul li {
@@ -431,7 +432,7 @@ html, body {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;  
+  -o-transition: all 0.3s ease-in-out;
 }
 #content > #gallery li.active {
   opacity: 1.0;
@@ -836,7 +837,7 @@ html, body {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;  
+  -o-transition: all 0.3s ease-in-out;
 }
 .featured_preview_img img:hover {
   opacity: 0.5;
@@ -1256,8 +1257,8 @@ html, body {
 	overflow: hidden;
 	margin-bottom: 7%;
 }
-.peope_block::-webkit-scrollbar { 
-    display: none; 
+.peope_block::-webkit-scrollbar {
+    display: none;
 }
 
 .people_block .people_block_left {
@@ -1278,7 +1279,7 @@ html, body {
 .people_block .people_name {
 	font-family: "Futura-Regular", "Futura", Verdana;
 	margin-bottom: 2%;
-	
+
 	font-size: 1.3vw;
 }
 
@@ -1383,9 +1384,9 @@ html, body {
   }
   #index_middle {
     margin-bottom: 0;
-  }  
+  }
 
-  #navbar #navbar_search_hidden > div > #search_form { 
+  #navbar #navbar_search_hidden > div > #search_form {
     height: 35%;
   }
 
@@ -1396,16 +1397,16 @@ html, body {
     top: 18%;
     right: 8px;
   }
-} 
+}
 
 
 
 /* Iphone */
-@media screen and (max-width : 375px) { 
+@media screen and (max-width : 375px) {
   #navbar #search_close {
     top: 20%;
   }
-  #navbar > #navbar_top #navbar_search { 
+  #navbar > #navbar_top #navbar_search {
     top: 33%;
   }
   #navbar #navbar_search > #search_link #search_box {
@@ -1415,7 +1416,7 @@ html, body {
     margin-top: 0;
   }
 
-  #navbar #navbar_search_hidden > div > #search_form { 
+  #navbar #navbar_search_hidden > div > #search_form {
     height: 35%;
   }
 
@@ -1425,9 +1426,9 @@ html, body {
   #navbar #navbar_search_hidden > div > #search_form #search_submit {
     top: 18%;
     right: 5px;
-  }  
+  }
 }
 
-@media screen and (max-width : 667px) { 
+@media screen and (max-width : 667px) {
 
 }
