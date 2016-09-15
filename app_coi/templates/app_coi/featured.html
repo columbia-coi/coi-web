@@ -16,13 +16,13 @@
 		<li class="dashed_line"></li>
 		<a href="{% url 'papers' %}"><li>Research Papers</li></a>
 		<li class="dashed_line"></li>
-		<a href="{% url 'featured' %}" style="color: #8a9140"><li>Featured COI People</li></a>
+		<a href="{% url 'featured' %}" style="color: #8a9140"><li>Featured on COI</li></a>
 	</ul>
 
 
 	<div class="menubar_content">
 
-	<h2 style="color: #8a9140; font-family:'Lusitana-Bold'">Featured COI People</h2><br>
+	<h2 style="color: #8a9140; font-family:'Lusitana-Bold'">Featured on COI</h2><br>
 
 
 	<div class="featured_list">
@@ -31,17 +31,17 @@
 
 			<div class="featured_preview_img">
 				{% if featured.category == 'Featured Article' %}
-                                <a href="{{featured.website}}" target="_blank">
+                                <a href="{{ featured.website }}" target="_blank">
                             {% else %}
-				<a href="featured/{{featured.name|slugify}}">
+				<a href="featured/{{ featured.name|slugify }}">
                             {% endif %}
-					<img src="media/{{featured.thumb}}" />
+					<img src="media/{{ featured.thumb }}" />
 
 					<div class="box_hidden">
 						{% if featured.category != 'Interview' %}
-							<i>{{featured.category}}:</i><br>
+							<i>{{ featured.category }}:</i><br>
 						{% endif %}
-						{{featured.name}}
+						{{ featured.name }}
 					</div>
 				</a>
 			</div>
@@ -51,20 +51,20 @@
 				<div class="featured_summary">
 
 				{% if featured.category != 'Interview' %}
-					<h2 style="font-family:'Lusitana-Bold'">{{featured.category}}:</h2>
-					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'">{{featured.name}}</h1><br>
+					<h2 style="font-family:'Lusitana-Bold'">{{ featured.category }}:</h2>
+					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'">{{ featured.name }}</h1><br>
 
 				{% else %}
-					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'; font-size: 1.5vw;">{{featured.name}}</h1><br>
+					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'; font-size: 1.5vw;">{{ featured.name }}</h1><br>
 
 				{% endif %}
 
-					{{featured.summary}}
+					{{ featured.summary }}
 					<br><br>
                                         {% if featured.category == 'Featured Article' %}
                                         <a href="{{featured.website}}" target="_blank">Click to read full article</a>
                                         {% else %}
-					<a href="featured/{{featured.name|slugify}}">Click to learn more</a>
+					<a href="featured/{{ featured.name|slugify }}">Click to learn more</a>
                                         {% endif %}
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 		{% endfor %}
 	</div>
 
-	<h2 style="color: #8a9140; font-family:'Lusitana-Bold'">Previously Featured People</h2><br>
+	<h2 style="color: #8a9140; font-family:'Lusitana-Bold'">Previously Featured</h2><br>
 
 
 	<div class="featured_list">
@@ -81,17 +81,17 @@
 
 			<div class="featured_preview_img">
                             {% if featured.category == 'Featured Article' %}
-                                <a href="{{featured.website}}" target="_blank">
+                                <a href="{{ featured.website }}" target="_blank">
                             {% else %}
-				<a href="featured/{{featured.name|slugify}}">
+				<a href="featured/{{ featured.name|slugify }}">
                             {% endif %}
-					<img src="media/{{featured.thumb}}" />
+					<img src="media/{{ featured.thumb }}" />
 
 					<div class="box_hidden">
 						{% if featured.category != 'Interview' %}
-							<i>{{featured.category}}:</i><br>
+							<i>{{ featured.category }}:</i><br>
 						{% endif %}
-						{{featured.name}}
+						{{ featured.name }}
 					</div>
 				</a>
 			</div>
@@ -101,20 +101,20 @@
 				<div class="featured_summary">
 
 				{% if featured.category != 'Interview' %}
-					<h2 style="font-family:'Lusitana-Bold'">{{featured.category}}:</h2>
-					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'">{{featured.name}}</h1><br>
+					<h2 style="font-family:'Lusitana-Bold'">{{ featured.category }}:</h2>
+					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'">{{ featured.name }}</h1><br>
 
 				{% else %}
-					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'; font-size: 1.5vw;">{{featured.name}}</h1><br>
+					<h1 style="color: #8a9140; font-family:'Lusitana-Bold'; font-size: 1.5vw;">{{ featured.name }}</h1><br>
 
 				{% endif %}
 
-					{{featured.summary}}
+					{{ featured.summary }}
 					<br><br>
                                         {% if featured.category == 'Featured Article' %}
-                                        <a href="{{featured.website}}" target="_blank">Click to read full article</a>
+                                        <a href="{{ featured.website }}" target="_blank">Click to read full article</a>
                                         {% else %}
-					<a href="featured/{{featured.name|slugify}}">Click to learn more</a>
+					<a href="featured/{{ featured.name|slugify }}">Click to learn more</a>
                                         {% endif %}
 				</div>
 			</div>
