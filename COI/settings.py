@@ -69,10 +69,10 @@ WSGI_APPLICATION = 'COI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dfua1lhj0kms5v',
-        'USER': 'jyzcyncpqchyax',
-        'PASSWORD': 'diVtlfNAZVbXYVHgCtU45RxwgN',
-        'HOST': 'ec2-54-204-42-119.compute-1.amazonaws.com',
+        'NAME': 'd7qmtq4ealf3au',
+        'USER': 'vbhaxbopjrasme',
+        'PASSWORD': '2e63e1157c9ff7600a7f9d58023666d9c2c842b1773a634e29ae142baef2efbb',
+        'HOST': 'ec2-23-23-221-255.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -112,4 +112,3 @@ ALLOWED_HOSTS = ['*']
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
-
