@@ -55,7 +55,7 @@ a:visited {
 }
 
 html, body {
-  font-family: "Futura-Regular", "Futura", Verdana;
+  font-family: "Futura", "Futura-Regular", Verdana;
   width: 100%;
 }
 
@@ -1277,7 +1277,7 @@ html, body {
 }
 
 .people_block .people_name {
-	font-family: "Futura-Regular", "Futura", Verdana;
+	font-family: "Futura", Futura-Regular", Verdana;
 	margin-bottom: 2%;
 
 	font-size: 1.3vw;
